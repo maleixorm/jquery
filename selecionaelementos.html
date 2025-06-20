@@ -18,7 +18,7 @@
     <ul class="lista1">
         <li class="exemplo1">opção 1</li>
         <li class="exemplo2">opção 2</li>
-        <li class="exemplo3">opção 3</li>
+        <li class="exemplo2">opção 3</li>
     </ul>
     
     <ul class="lista2">
@@ -28,8 +28,13 @@
     </ul>
     
     <script>
+        console.log($('div.exemplo1'))
         console.log($('li.exemplo1'));
         console.log($('.lista1 .exemplo2'));
+        console.log($('.lista1 .exemplo2:first'));
+        console.log($('.lista1 .exemplo2:last'));
+        console.log($('.lista1 .exemplo2:even'));
+        console.log($('.lista1 .exemplo2:odd'));
     </script>
 </body>
 </html>

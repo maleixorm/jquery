@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $('#nome').val('Seu nome aqui...');
+            $('#origem').val("3");
+        });
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+
+        <br><br>
+
+        <label for="origem">Onde você nos encontrou?</label>
+        <select name="origem" id="origem">
+            <option value="1">Google</option>
+            <option value="2">Instagem</option>
+            <option value="3">Radio</option>
+            <option value="4">Outros Meios</option>
+        </select>
+    </form>
+</body>
+</html>

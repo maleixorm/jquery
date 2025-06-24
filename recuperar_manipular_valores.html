@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,10 @@
         $(document).ready(() => {
             $('#nome').val('Seu nome aqui...');
             $('#origem').val("3");
+            $('.sexo:checked').val();
+            $.each($('.interesses:checked'), (indice, valor) => {
+                console.log(indice, valor);
+            });
         });
     </script>
 </head>
@@ -26,6 +30,20 @@
             <option value="3">Radio</option>
             <option value="4">Outros Meios</option>
         </select>
+
+        <br><br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" class="sexo" value="f">Feminino
+        <input type="radio" name="sexo" class="sexo" value="m">Masculino
+
+        <br><br>
+
+        <label for="interesses">Inseresses:</label>
+        <input type="checkbox" name="interesses" class="interesses" value="php">PHP
+        <input type="checkbox" name="interesses" class="interesses" value="react">React
+        <input type="checkbox" name="interesses" class="interesses" value="js">JavaScript
+        <input type="checkbox" name="interesses" class="interesses" value="nodejs">NodeJS
+        <input type="checkbox" name="interesses" class="interesses" value="angular">Angular
     </form>
 </body>
 </html>

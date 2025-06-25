@@ -13,6 +13,8 @@
             $('#lista2').prepend('<div>Item 0</div>');
             $('#lista2').after('<p>Eu fui inserido após a div</p>');
             $('#lista2').before('<p>Eu fui inserido antes da div</p>');
+            $('#linha').html('<p>Eu subistitui a linha</p>');
+            $('#linha').remove('<p>Eu removi a linha</p>');
         });
     </script>
 </head>
@@ -29,6 +31,6 @@
         <div>Item 3</div>
     </div>
 
-    <hr>
+    <hr id="linha">
 </body>
 </html>

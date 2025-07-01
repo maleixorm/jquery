@@ -3,20 +3,54 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>jQuery</title>
+		<style>
+			.form {
+				margin: 1rem;
+				padding: 1rem;
+				text-align: center;
+			}
+			.campo {
+				border: 1px solid #000;
+				border-radius: .2rem;
+				padding: 1rem;
+			}
+
+			.padrao {
+				background-color: #ddd;
+			}
+
+			.erro {
+				background-color: #f00;
+			}
+
+			.sucesso {
+				background-color: #0f0;
+				font-size: 1rem;
+			}
+		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script>
-
+		<script defer>
+			$(document).ready(function() {
+				$('#topo').css({'background-color': '#155661', 'margin': '0px', 'padding': '10px 20px 10px 20px'});
+				$('body').css('margin', '0px');
+				$('h1').css({'color': '#fff', 'text-align': 'center'});
+				$('input').addClass('campo');
+				$('textarea').addClass('campo');
+				$('button').addClass('sucesso');
+				$('button').removeClass('sucesso');
+				$('#contact').addClass('form');
+			});
 		</script>
 	</head>
 
 	<body>
 		
-		<div>
+		<div id="topo">
 			<h1>Barra de navegação da aplicação</h1>
 		</div>
 
-		<div>
+		<div id="contact">
 			<h3>Contato</h3>
 			<hr />
 

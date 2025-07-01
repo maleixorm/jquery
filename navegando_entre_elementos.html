@@ -6,7 +6,17 @@
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script>
-
+			console.log($('.secao1').parent());
+			console.log($('.subSecao').closest('#pagina'));
+			console.log($('.subSecao').closest('.secao1'));
+			console.log($('.item').closest('#topo'));
+			console.log($('.item').closest('ul'));
+			console.log($('.item').parent());
+			console.log($('#rodape').find('p'));
+			console.log($('#topo').find('.item'));
+			console.log($('.secao1').parent().find('h1'));
+			console.log($('.subSecao').parent().parent().find('h1'));
+			console.log($('.subSecao').closest('#pagina').find('h1'));
 		</script>
 	</head>
 

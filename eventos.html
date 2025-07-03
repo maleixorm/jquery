@@ -9,8 +9,18 @@
 		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script>
-
+		<script defer>
+			$(document).ready(() => {
+				$('#onload').html('Página carregada.');
+				
+				$(window).scroll(() => {
+					$('#scroll').html('Scroll acionado.');
+				});
+				
+				$(window).resize(() => {
+					$('#resize').html('Página redimensionada.').css('background-color', 'red');
+				});
+        	});
 		</script>
 	</head>
 
@@ -22,9 +32,9 @@
 
 		<div>
 			<h3>Browser</h3>
-			<span>Onload: </span><span>?</span><br />
-			<span>Scroll: </span><span>?</span><br />
-			<span>Window: </span><span>?</span>
+			<span>Onload: </span><span id="onload">?</span><br />
+			<span>Scroll: </span><span id="scroll">?</span><br />
+			<span>Resize Window: </span><span id="resize">?</span>
 			<hr />
 
 			<h3>Mouse</h3>

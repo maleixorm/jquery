@@ -19,61 +19,7 @@
 		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script defer>
-			$(document).ready(() => {
-				$('#onload').html('Página carregada.');
-				
-				$(window).scroll(() => {
-					$('#scroll').html('Scroll acionado.');
-				});
-				
-				$(window).resize(() => {
-					$('#resize').html('Página redimensionada.').css('background-color', 'red');
-				});
-				$('#btn1').mousedown(() => {
-					$('#div1').css('background-color', 'green');
-				});
-				$('#btn1').mouseup(() => {
-					$('#div1').css('background-color', 'blue');
-
-				});
-				$('#btn2').dblclick(() => {
-					$('#div1').css('background-color', 'gray');
-					
-				});
-				$('#div1').mousemove(() => {
-					$('#div1').css('background-color', 'yellow');
-
-				});
-				$('#div1').mousemove((e) => {
-					$('#resultadoDiv').html('X: ' + e.offsetX + ' Y: ' + e.offsetY);
-				});
-				$('#divExterna').mouseover(() => {
-					$('#resultadoDiv1').html('Entrou');
-				});
-				$('#divExterna').mouseenter(() => {
-					$('#divExterna').css('background-color', 'red');
-				});
-				$('#divExterna').mouseout(() => {
-					$('#resultadoDiv1').html('Saiu');
-				});
-				$('#divExterna').mouseleave(() => {
-					$('#divExterna').css('background-color', 'blue');
-				});
-				$('#divInterna').mouseover(() => {
-					$('#resultadoDiv2').html('Entrou');
-				});
-				$('#divInterna').mouseenter(() => {
-					$('#divInterna').css('background-color', 'yellow');
-				});
-				$('#divInterna').mouseout(() => {
-					$('#resultadoDiv2').html('Saiu');
-				});
-				$('#divInterna').mouseleave(() => {
-					$('#divInterna').css('background-color', 'purple');
-				});
-			});
-		</script>
+		<script src="js/eventos.js" defer></script>
 	</head>
 
 	<body>
@@ -104,8 +50,8 @@
 
 			<h3>Teclado</h3>
 			<span>Nome:</span>
-			<input type="text" />
-			<span>Resultado do evento sobre o input</span>
+			<input type="text" id="teclado" />
+			<span id="resultadoTecla">Resultado do evento sobre o input</span>
 			<hr />
 
 			<h3>Formulário</h3>

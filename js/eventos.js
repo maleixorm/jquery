@@ -63,4 +63,30 @@ $(document).ready(() => {
     //         $(e.target).val('');
     //     };
     // });
+    $('#nome').focus((e) => {
+        console.log('Esse elemento html recebeu o foco (nome)');
+        $(e.target).addClass('inputFocado');
+    });
+    $('#email').focus((e) => {
+        console.log('Esse elemento html recebeu o foco (email)');
+        $(e.target).addClass('inputFocado');
+    });
+    $('#nome').blur((e) => {
+        console.log('Esse elemento html perdeu o foco (nome)');
+        $(e.target).removeClass('inputFocado');
+    });
+    $('#email').blur((e) => {
+        console.log('Esse elemento html perdeu o foco (email)');
+        $(e.target).removeClass('inputFocado');
+    });
+    $('#opcao').change((e) => {
+        console.log($(e.target).val());
+    });
+    $('#form').submit((e) => {
+        e.preventDefault();
+        console.log('Formulário enviado.');
+    });
+    $('a').click((e) => {
+        e.preventDefault();
+    })
 });

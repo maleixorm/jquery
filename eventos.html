@@ -3,21 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>jQuery</title>
-
-		<style>
-			#divExterna {
-				background-color: #ccc;
-				width: 80px;
-				height: 80px;
-				padding: 70px;
-			}
-			#divInterna {
-				background-color: #000;
-				width: 80px;
-				height: 80px;
-			}
-		</style>
-
+		<link rel="stylesheet" href="css/style.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="js/eventos.js" defer></script>
 	</head>
@@ -55,22 +41,24 @@
 			<hr />
 
 			<h3>Formulário</h3>
-			<form>
+			<form id="form">
 				<span>Nome:</span>
-				<input type="text" />
+				<input type="text" id="nome" />
 
 				<span>E-mail:</span>
-				<input type="text" />
+				<input type="text" id="email"/>
 
 				<span>Motivo do contato:</span>
-				<select>
+				<select id="opcao">
 					<option value="">-- Selecione --</option>
 					<option value="duvida">Dúvida</option>
 					<option value="sugestao">Sugestão</option>
 				</select>
 				
-				<button type="button">Enviar</button>
+				<button type="submit">Enviar</button>
 			</form>
+			<br>
+			<a rel="stylesheet" href="https://www.google.com.br">Google</a>
 		</div>
 	</body>
 
